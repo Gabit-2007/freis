@@ -3,6 +3,7 @@
   background-color: #F3F3F3;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 
 
 h1{
@@ -39,7 +40,7 @@ h1{
 }
 
 .Inicio{
-  padding: 5px;
+  padding: 0px;
   margin: 30px;
 
   h1{
@@ -49,18 +50,20 @@ h1{
   .cartoes{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     padding: 5px;
-    margin: 5px;
+    margin: 0px;
   }
 
 .cartao{
   button{
-  width: 215px;
+  width: 170px;
   height: 158px;
   border-radius: 12px;
   background-color: white;
   border: 0px;
+  margin: 3px;
   align-items: center;
   justify-content: center;
   padding: 5px;
@@ -78,7 +81,7 @@ h1{
   h2{
     font-size: 15px;
     color: #383131;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 2px;
   }
 
@@ -129,15 +132,17 @@ h1{
   font-family: roboto, sans-serif;
   background-color: #F3F3F3;
   margin: 0;
+  padding-left: 0;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
 
   span{
-    width: 1350px;
+    width: 93%;
     height: 2px;
     display: flex;
+    justify-self: center;
 
   }
 
@@ -147,7 +152,7 @@ h1{
     justify-content: center;
     align-content: center;
     height: 213px;
-    width: 1275px;
+    width: 90%;
     margin-bottom: 20px;
     border-radius: 12px;
     padding: 15px;

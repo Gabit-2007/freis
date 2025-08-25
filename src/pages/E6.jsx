@@ -9,7 +9,7 @@ export default function E6() {
     const [num3, setNum3] = useState(0);
 
     function total() {
-        let resultado = Number(num1) - Number(num2) + Number(num3)
+        let resultado = Number(num1) + ( Number(num1) * Number(num3) / 100) - Number(num2)
         setResul(resultado)
     }
 
@@ -52,7 +52,7 @@ do total de descontos em reais.</p>
             <br />
             
         </div>
-        <p>O valor é {resul}</p>
+        <p>O valor é R${resul}</p>
         </div>
         </div>
         

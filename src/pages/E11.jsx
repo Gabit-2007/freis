@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 
 export default function E11() {
-    const [resul, setResul] = useState(0);
+    const [resul, setResul] = useState([]);
     const [num, setNum] = useState(0);
     
     function total() {
@@ -13,12 +13,13 @@ export default function E11() {
 
 
 while (i <= 10) {
-    let conta = num * i;
-    resultado.push(`${num} x ${i} = ${conta} // `);
+    const conta = num * i;
+    resultado.push(`${num} x ${i} = ${conta} `);
     i++;
 }
 
         setResul(resultado)
+        setNum(Number(valor) + 1)
     }
 
     return(
@@ -52,7 +53,11 @@ um número informado pelo usuário. A mensagem deve estar no formato:
             <button onClick={total}>executar</button>
             <br />
         </div>
-        <p>O resultado é: {resul}</p>
+        {
+        resul.map( item => {
+            return <p>{item}</p>
+        })
+        }
         </div>
         </div>
         </div>
