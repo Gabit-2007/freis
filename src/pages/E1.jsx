@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import seta from '../assets/seta.png'
 
 
 export default function E1() {
@@ -16,6 +17,7 @@ export default function E1() {
         <>
         <div className="body">
         <div className="cabecalho">
+            <img src={seta} alt="seta" />
         <h1>React FreiS</h1>
         <div className="links">
         <Link to={'/'} className="linka">Inicio</Link>
